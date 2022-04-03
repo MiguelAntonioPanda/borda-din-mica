@@ -1,34 +1,65 @@
-
-
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
+header{
+    background-color: #A1C7E0;  
+}
+.logo{
+    padding: 10px 0px 0px 50px;
+    font-family: fantasy;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.logo a{
+    color: #0099DD;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+#cadastro{
+    float: right;
+    margin-top: -45px;
+    padding: 8px;
+    border: 2px solid #0099DD;
+    margin-right: 50px;
+    background-color: #A1C7E0; 
+    border-radius: 30px;
+    transition: 0.5s ease-in;
+}
+#cadastro a{
+    color: rgb(97, 96, 96);
+}
+#cadastro:hover{
+    font-size: 0.9em;
+}
 nav{
     text-align: center;
-    margin-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin-top: -35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 0px 0px 12px 0;
 }
 nav a{
-    color: gray;
+    color: rgb(97, 96, 96);
     padding: 0px 12px 10px 0;
     font-size: 12pt;
     position: relative;
+    transition: 0.5s ease-in-out; 
 }
 nav a::after{
     content: " ";
     width: 0%;
     height: 2px;
-    background-color: #0000;
+    background-color: #000;
     position: absolute;
     bottom: 0;
     left: 0;
     transition: 0.5s ease-in-out;
-
 }
-nav:hover ::after{
-    width: 100%;
-
+nav a:hover{
+    color: #000;
+}
+nav a:hover::after{
+    width: 85%;
 }
